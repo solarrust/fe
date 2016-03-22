@@ -5,19 +5,9 @@ header
 				|Fe
 
 	nav
+		//- Создаем массив для меню
+		- var menus = {'Home':'#', 'About Us':'#', 'Products':'#', 'Testimonials':'#', 'Contact':'#'}
 		ul
-			li
-				a(href="#")
-					|Home
-			li
-				a(href="#")
-					|About Us
-			li
-				a(href="#")
-					|Products
-			li
-				a(href="#")
-					|Testimonials
-			li
-				a(href="#")
-					|Contact
+			each menuHref, menuName in menus
+				li
+					a(href= menuHref)= menuName

@@ -116,7 +116,7 @@ header nav ul li a:hover
 {
     position: absolute;
     z-index: -999;
-    top: 853px;
+    top: 85.3rem;
     right: 0;
 
     width: 63rem;
@@ -245,4 +245,140 @@ header nav ul li a:hover
 
         opacity: 0;
     }
+}
+.content_block
+{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 13rem;
+}
+.content_block .descript
+{
+    display: inline-block;
+
+    margin: 0 4rem;
+    margin-left: 7rem;
+
+    vertical-align: text-top;
+}
+.content_block .descript img
+{
+    position: relative;
+    top: -5rem;
+
+    float: left;
+
+    margin-right: 3rem;
+}
+.content_block .descript p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 125%;
+
+    max-width: 70rem;
+}
+.tit
+{
+    display: inline-block;
+}
+.tit h1
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+
+    margin: 0;
+
+    text-transform: uppercase;
+
+    color: #0cf;
+}
+.tit h1 i
+{
+    font-style: normal;
+
+    color: #f90;
+}
+.tit p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+
+    color: #333;
+}
+.tabs
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+.tabs label
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 5.5rem;
+
+    display: inline-block;
+
+    width: 17.5rem;
+    height: 5.5rem;
+
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #333;
+}
+.tabs input
+{
+    position: absolute;
+    left: -9999px;
+}
+#tab_1:checked ~ #tab_l1,
+#tab_2:checked ~ #tab_l2,
+#tab_3:checked ~ #tab_l3
+{
+    z-index: 3;
+    top: 0;
+
+    cursor: pointer;
+
+    border-color: #fff;
+    background: #fff;
+}
+.tabs_cont
+{
+    position: relative;
+    z-index: 2;
+
+    height: 230px;
+
+    background: #fff;
+}
+.tabs_cont > div
+{
+    position: absolute;
+    top: 0;
+    left: -9999px;
+
+    -webkit-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+
+    opacity: 0;
+}
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3
+{
+    position: static;
+    left: 0;
+
+    opacity: 1;
 }

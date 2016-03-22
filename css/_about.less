@@ -1,0 +1,111 @@
+.content_block{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 13rem;
+
+	.descript{
+		display: inline-block;
+		margin: 0 4rem;
+		margin-left: 7rem;
+		vertical-align: text-top;
+
+		img{
+			margin-right: 3rem;
+			float: left;
+			position: relative;
+    		top: -5rem;
+		}
+
+		p{
+			.lato;
+			font-size: 1.6rem;
+			line-height: 125%;
+			max-width: 70rem;
+		}
+	}
+}
+
+.tit{
+	display: inline-block;
+
+	h1{
+		.latoBold;
+		font-size: 3rem;
+		text-transform: uppercase;
+		color: @blue;
+		margin: 0;
+
+		i{
+			color: @orange;
+			font-style: normal;
+		}
+	}
+
+	p{
+		.lato;
+		font-size: 1.8rem;
+		color: @gray;
+		font-style: italic;
+	}
+}
+
+
+// Стили для табов
+.tabs {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 96rem;
+
+	label {
+		color: @gray;
+		display: inline-block;
+		width: 17.5rem;
+		height: 5.5rem;
+		line-height: 5.5rem;
+		text-align: center;
+		.lato;
+		font-size: 2rem;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	input {
+		position: absolute;
+		left: -9999px;
+	}
+}
+
+#tab_1:checked  ~ #tab_l1,
+#tab_2:checked  ~ #tab_l2,
+#tab_3:checked  ~ #tab_l3 {
+	background: @white;
+	border-color: @white;
+	top: 0;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.tabs_cont {
+	background: #fff;
+	position: relative;
+	z-index: 2;
+	height: 230px;
+}
+
+.tabs_cont > div {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	opacity: 0;
+	-moz-transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+#tab_1:checked ~ .tabs_cont #tab_c1,
+#tab_2:checked ~ .tabs_cont #tab_c2,
+#tab_3:checked ~ .tabs_cont #tab_c3 {
+	position: static;
+	left: 0;
+	opacity: 1;
+}
