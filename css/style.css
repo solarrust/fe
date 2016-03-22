@@ -56,6 +56,9 @@ header nav ul li
     padding: 1.5rem;
 
     list-style: none;
+
+    -webkit-transition: .2s;
+            transition: .2s;
 }
 header nav ul li:last-child
 {
@@ -248,42 +251,30 @@ header nav ul li a:hover
 }
 .content_block
 {
+    overflow: hidden;
+
     width: 90%;
     margin: 0 auto;
     margin-top: 13rem;
+    margin-bottom: 5rem;
 }
-.content_block .descript
+.content_block .tit
 {
-    display: inline-block;
+    display: block;
 
-    margin: 0 4rem;
-    margin-left: 7rem;
-
-    vertical-align: text-top;
+    max-width: 90%;
+    margin: 0 auto;
 }
-.content_block .descript img
+.content_block .tit:after
 {
-    position: relative;
-    top: -5rem;
+    display: block;
+    clear: both;
 
-    float: left;
+    width: 100%;
 
-    margin-right: 3rem;
+    content: '';
 }
-.content_block .descript p
-{
-    font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 125%;
-
-    max-width: 70rem;
-}
-.tit
-{
-    display: inline-block;
-}
-.tit h1
+.content_block .tit h1
 {
     font-family: 'Lato', sans-serif;
     font-size: 3rem;
@@ -295,13 +286,13 @@ header nav ul li a:hover
 
     color: #0cf;
 }
-.tit h1 i
+.content_block .tit h1 i
 {
     font-style: normal;
 
     color: #f90;
 }
-.tit p
+.content_block .tit p
 {
     font-family: 'Lato', sans-serif;
     font-size: 1.8rem;
@@ -310,31 +301,68 @@ header nav ul li a:hover
 
     color: #333;
 }
+.content_block .tit .descript
+{
+    display: inline-block;
+    float: right;
+
+    margin: 0 4rem;
+    margin-left: 7rem;
+
+    vertical-align: text-top;
+}
+.content_block .tit .descript img
+{
+    position: relative;
+    top: -5rem;
+
+    float: left;
+
+    margin-right: 3rem;
+}
+.content_block .tit .descript p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 125%;
+
+    max-width: 70rem;
+}
 .tabs
 {
     position: relative;
 
+    display: block;
+
     width: 100%;
-    max-width: 96rem;
+    max-width: 90%;
     margin: 0 auto;
+    margin-top: 2.5rem;
 }
 .tabs label
 {
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     font-weight: 300;
+    font-style: italic;
     line-height: 5.5rem;
 
     display: inline-block;
 
     width: 17.5rem;
     height: 5.5rem;
+    margin-right: -2.3rem;
 
     cursor: pointer;
+    -webkit-transition: .5s;
+            transition: .5s;
     text-align: center;
     text-transform: uppercase;
 
     color: #333;
+    background: url(../img/tab_gray.svg) no-repeat top center;
 }
 .tabs input
 {
@@ -350,17 +378,108 @@ header nav ul li a:hover
 
     cursor: pointer;
 
-    border-color: #fff;
-    background: #fff;
+    color: #fff;
+    background: url(../img/tab.svg) no-repeat top center;
 }
 .tabs_cont
 {
     position: relative;
     z-index: 2;
 
-    height: 230px;
+    height: 30rem;
+    margin: 9.5rem 0;
 
     background: #fff;
+}
+.tabs_cont .block
+{
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 45%;
+    height: 17.5rem;
+    padding: 3.5rem;
+}
+.tabs_cont .block:nth-child(odd)
+{
+    padding-left: 0;
+
+    border-right: 1px solid #eaeaea;
+}
+.tabs_cont .block:nth-child(even)
+{
+    padding-right: 0;
+}
+.tabs_cont .block i
+{
+    display: inline-block;
+    float: left;
+
+    width: 12.5rem;
+    height: 10.5rem;
+    margin-right: 2rem;
+}
+.tabs_cont .block:first-child
+{
+    border-bottom: 1px solid #eaeaea;
+}
+.tabs_cont .block:first-child i
+{
+    background-image: url(../img/icons/icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 -420px;
+}
+.tabs_cont .block:first-child i:hover
+{
+    background-position: 0 -525px;
+}
+.tabs_cont .block:nth-child(2)
+{
+    border-bottom: 1px solid #eaeaea;
+}
+.tabs_cont .block:nth-child(2) i
+{
+    background-image: url(../img/icons/icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 -210px;
+}
+.tabs_cont .block:nth-child(2) i:hover
+{
+    background-position: 0 -315px;
+}
+.tabs_cont .block:nth-child(3) i
+{
+    background-image: url(../img/icons/icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 -630px;
+}
+.tabs_cont .block:nth-child(3) i:hover
+{
+    background-position: 0 -735px;
+}
+.tabs_cont .block:last-child i
+{
+    background-image: url(../img/icons/icons.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.tabs_cont .block:last-child i:hover
+{
+    background-position: 0 -105px;
+}
+.tabs_cont .block p.title
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    margin: 1rem 0;
+}
+.tabs_cont .block p.text
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
 }
 .tabs_cont > div
 {
