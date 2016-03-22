@@ -1,0 +1,248 @@
+@import url(normalize.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300);
+html
+{
+    font-size: 62.5%;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    position: absolute;
+    z-index: 1;
+
+    width: 90%;
+    max-height: 16rem;
+    margin: 0 5%;
+    padding: 3rem 0;
+}
+header div,
+header nav
+{
+    display: inline-block;
+}
+header .logo
+{
+    max-width: 7.4rem;
+    max-height: 5.8rem;
+}
+header .logo a
+{
+    display: block;
+
+    width: 100%;
+}
+header .logo object
+{
+    width: 100%;
+}
+header nav
+{
+    float: right;
+}
+header nav ul
+{
+    text-align: center;
+}
+header nav ul li
+{
+    font-size: 1.6rem;
+
+    display: inline-block;
+
+    padding: 1.5rem;
+
+    list-style: none;
+}
+header nav ul li:last-child
+{
+    padding-right: 0;
+}
+header nav ul li a
+{
+    text-decoration: none;
+
+    color: #fff;
+}
+header nav ul li a:hover
+{
+    border-bottom: 1px solid #fff;
+}
+.slider
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 100%;
+    height: 103rem;
+
+    color: #fff;
+}
+.slider .shaped
+{
+    float: left;
+    float: right;
+
+    width: 100%;
+    height: 100%;
+
+    background: url(../img/main.jpg) no-repeat center top;
+    background-size: cover;
+
+    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+            shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+}
+.slider .shaped:after
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(255, 255, 255, .4), rgba(255, 255, 255, .5) 1px, transparent 1px, transparent 100%);
+    background-image:         repeating-radial-gradient(center center, rgba(255, 255, 255, .4), rgba(255, 255, 255, .5) 1px, transparent 1px, transparent 100%);
+    background-size: .5rem .5rem;
+}
+.slider .treangle
+{
+    position: absolute;
+    z-index: -999;
+    top: 853px;
+    right: 0;
+
+    width: 63rem;
+    height: 16rem;
+
+    background: #0cf;
+
+    -webkit-shape-outside: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+            shape-outside: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+    -webkit-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+            clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+}
+.slider .treangle:after
+{
+    display: block;
+    clear: both;
+
+    width: 100%;
+
+    content: ' ';
+}
+.slider .text
+{
+    position: absolute;
+    top: 23rem;
+    left: 50%;
+
+    display: block;
+
+    max-width: 71rem;
+    height: 40rem;
+    margin-left: -35.5rem;
+
+    text-align: center;
+}
+.slider .text h3
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+
+    text-transform: uppercase;
+}
+.slider .text object
+{
+    max-width: 19rem;
+    max-height: 19rem;
+    margin: 4.5rem;
+    margin-left: -.5rem;
+}
+.slider .text p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+
+    margin: 4rem auto;
+}
+.slider .mouse
+{
+    position: absolute;
+    bottom: 20rem;
+    left: 50%;
+
+    display: block;
+
+    width: 45px;
+    height: 67px;
+    margin: 0 auto 0 -26px;
+
+    border: 3px solid #fff;
+    border-radius: 23px;
+}
+.slider .mouse span
+{
+    display: block;
+
+    width: 10px;
+    height: 17px;
+    margin: 6px auto;
+
+    -webkit-animation-name: scroll;
+            animation-name: scroll;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background: none repeat scroll 0 0;
+
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+@-webkit-keyframes scroll
+{
+    0%
+    {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+
+        opacity: 1;
+    }
+    100%
+    {
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+
+        opacity: 0;
+    }
+}
+@keyframes scroll
+{
+    0%
+    {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+
+        opacity: 1;
+    }
+    100%
+    {
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+
+        opacity: 0;
+    }
+}

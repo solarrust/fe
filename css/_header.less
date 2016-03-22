@@ -1,0 +1,55 @@
+header{
+    width: 90%;
+    max-height: 16rem;
+    margin: 0 5%;
+    position: absolute;
+    padding: 3rem 0;
+    z-index: 1;
+
+    div, nav{
+        display: inline-block;
+    }
+
+    .logo{
+        max-width: 7.4rem;
+        max-height: 5.8rem;
+
+        a{
+            display: block;
+            width: 100%;
+        }
+
+        object{
+            width: 100%;
+        }
+    }
+
+    nav {
+        float: right;
+
+        ul{
+        text-align: center;
+
+            li{
+                list-style: none;
+                display: inline-block;
+                font-size: 1.6rem;
+                padding: 1.5rem;
+
+                &:last-child{
+                    padding-right: 0;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: #fff;
+
+                    &:hover{
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+
+            }
+        }
+    }
+}
