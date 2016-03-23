@@ -1,0 +1,293 @@
+.skils{
+	shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    background: @back-gray;
+    height: 94rem;
+    box-sizing: border-box;
+
+    h2{
+    	.latoBold;
+    	font-size: 2.4rem;
+		color: @gray;
+		text-transform: uppercase;
+		text-align: center;
+    }
+
+    .underline{
+    	.lato;
+    	font-size: 1.6rem;
+    	line-height: 125%;
+    	color: @gray;
+		max-width: 54rem;
+		padding: 5.5rem 0;
+		text-align: center;
+		margin: 0 auto;
+    }
+
+    .circles{
+    	display: block;
+    	max-width: 90%;
+    	margin: 0 auto;
+    	text-align: center;
+
+    	.circle_block{
+    		display: inline-block;
+    		width: 24rem;
+
+    		p{
+	    		position: relative;
+	    		bottom: -4rem;
+	    		.lato;
+	    		font-size: 1.6rem;
+	    		color: @text-gray;
+	    		padding: 0 1.5rem;
+	    	}
+    	}
+    }
+}
+
+// Анимация пайпов
+@-webkit-keyframes
+	load { 0% {
+	stroke-dashoffset:100%
+	}
+}
+@-moz-keyframes
+	load { 0% {
+	stroke-dashoffset:100%
+	}
+}
+@keyframes
+	load { 0% {
+	stroke-dashoffset:100%
+	}
+}
+
+.wordpress{
+
+	.progress>li {
+	  display: inline-block;
+	  position: relative;
+	  text-align: center;
+	  color: initial;
+	  font-family: 'Lato';
+	  font-weight: 100;
+	  margin: 2rem;
+
+
+		&:before {
+		  content: attr(data-name);
+		  position: absolute;
+		  width: 100%;
+		  bottom: -5rem;
+		  .latoBold;
+		  font-size: 2rem;
+		  text-transform: uppercase;
+		  color: @gray;
+		}
+
+		&:after {
+		  content: attr(data-percent);
+		  position: absolute;
+		  width: 100%;
+		  top: 6rem;
+		  left: 0;
+		  font-size: 3rem;
+		  text-align: center;
+		  .latoBold;
+		  color: @gray;
+		}
+	}
+
+	.progress svg {
+	  width: 15rem;
+	  height: 15rem;
+
+
+		&:nth-child(2) {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  transform: rotate(120deg);
+		}
+
+		&:nth-child(2) path {
+		  fill: none;
+		  stroke-width: 10;
+		  stroke-dasharray: 412;
+		  stroke: @blue;
+		  animation: load 5s;
+		}
+	}
+}
+
+.html{
+	.progress>li {
+	  display: inline-block;
+	  position: relative;
+	  text-align: center;
+	  color: initial;
+	  font-family: 'Lato';
+	  font-weight: 100;
+	  margin: 2rem;
+
+
+		&:before {
+		  content: attr(data-name);
+		  position: absolute;
+		  width: 100%;
+		  bottom: -5rem;
+		  .latoBold;
+		  font-size: 2rem;
+		  text-transform: uppercase;
+		  color: @gray;
+		}
+
+		&:after {
+		  content: attr(data-percent);
+		  position: absolute;
+		  width: 100%;
+		  top: 6rem;
+		  left: 0;
+		  font-size: 3rem;
+		  text-align: center;
+		  .latoBold;
+		  color: @gray;
+		}
+	}
+
+	.progress svg {
+	  width: 15rem;
+	  height: 15rem;
+
+
+		&:nth-child(2) {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  transform: rotate(180deg);
+		}
+
+		&:nth-child(2) path {
+		  fill: none;
+		  stroke-width: 10;
+		  stroke-dasharray: 531;
+		  stroke: @blue;
+		  animation: load 5s;
+		}
+	}
+}
+
+.css{
+	.progress>li {
+	  display: inline-block;
+	  position: relative;
+	  text-align: center;
+	  color: initial;
+	  font-family: 'Lato';
+	  font-weight: 100;
+	  margin: 2rem;
+
+
+		&:before {
+		  content: attr(data-name);
+		  position: absolute;
+		  width: 100%;
+		  bottom: -5rem;
+		  .latoBold;
+		  font-size: 2rem;
+		  text-transform: uppercase;
+		  color: @gray;
+		}
+
+		&:after {
+		  content: attr(data-percent);
+		  position: absolute;
+		  width: 100%;
+		  top: 6rem;
+		  left: 0;
+		  font-size: 3rem;
+		  text-align: center;
+		  .latoBold;
+		  color: @gray;
+		}
+	}
+
+	.progress svg {
+	  width: 15rem;
+	  height: 15rem;
+
+
+		&:nth-child(2) {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  transform: rotate(-130deg);
+		}
+
+		&:nth-child(2) path {
+		  fill: none;
+		  stroke-width: 10;
+		  stroke-dasharray: 566;
+		  stroke: @blue;
+		  animation: load 5s;
+		}
+	}
+}
+
+.photoshop{
+	.progress>li {
+	  display: inline-block;
+	  position: relative;
+	  text-align: center;
+	  color: initial;
+	  font-family: 'Lato';
+	  font-weight: 100;
+	  margin: 2rem;
+
+
+		&:before {
+		  content: attr(data-name);
+		  position: absolute;
+		  width: 100%;
+		  bottom: -5rem;
+		  .latoBold;
+		  font-size: 2rem;
+		  text-transform: uppercase;
+		  color: @gray;
+		}
+
+		&:after {
+		  content: attr(data-percent);
+		  position: absolute;
+		  width: 100%;
+		  top: 6rem;
+		  left: 0;
+		  font-size: 3rem;
+		  text-align: center;
+		  .latoBold;
+		  color: @gray;
+		}
+	}
+
+	.progress svg {
+	  width: 15rem;
+	  height: 15rem;
+
+
+		&:nth-child(2) {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  transform: rotate(-90deg);
+		}
+
+		&:nth-child(2) path {
+		  fill: none;
+		  stroke-width: 10;
+		  stroke-dasharray: 673;
+		  stroke: @blue;
+		  animation: load 5s;
+		}
+	}
+}

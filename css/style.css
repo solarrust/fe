@@ -251,12 +251,8 @@ header nav ul li a:hover
 }
 .content_block
 {
-    overflow: hidden;
-
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 13rem;
-    margin-bottom: 5rem;
+    padding-top: 13rem;
+    padding-bottom: 5rem;
 }
 .content_block .tit
 {
@@ -306,7 +302,8 @@ header nav ul li a:hover
     display: inline-block;
     float: right;
 
-    margin: 0 4rem;
+    box-sizing: border-box;
+    max-width: 60rem;
     margin-left: 7rem;
 
     vertical-align: text-top;
@@ -327,16 +324,14 @@ header nav ul li a:hover
     font-weight: 300;
     font-style: normal;
     line-height: 125%;
-
-    max-width: 70rem;
 }
 .tabs
 {
     position: relative;
 
     display: block;
+    overflow: hidden;
 
-    width: 100%;
     max-width: 90%;
     margin: 0 auto;
     margin-top: 2.5rem;
@@ -500,4 +495,376 @@ header nav ul li a:hover
     left: 0;
 
     opacity: 1;
+}
+.skils
+{
+    box-sizing: border-box;
+    height: 94rem;
+
+    background: #f7f7f7;
+
+    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+            shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+}
+.skils h2
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #333;
+}
+.skils .underline
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 125%;
+
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 5.5rem 0;
+
+    text-align: center;
+
+    color: #333;
+}
+.skils .circles
+{
+    display: block;
+
+    max-width: 90%;
+    margin: 0 auto;
+
+    text-align: center;
+}
+.skils .circles .circle_block
+{
+    display: inline-block;
+
+    width: 24rem;
+}
+.skils .circles .circle_block p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    position: relative;
+    bottom: -4rem;
+
+    padding: 0 1.5rem;
+
+    color: #999;
+}
+@-webkit-keyframes load
+{
+    0%
+    {
+        stroke-dashoffset: 100%;
+    }
+}
+@keyframes load
+{
+    0%
+    {
+        stroke-dashoffset: 100%;
+    }
+}
+.wordpress .progress > li
+{
+    font-family: 'Lato';
+    font-weight: 100;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: 2rem;
+
+    text-align: center;
+
+    color: initial;
+}
+.wordpress .progress > li:before
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: -5rem;
+
+    width: 100%;
+
+    content: attr(data-name);
+    text-transform: uppercase;
+
+    color: #333;
+}
+.wordpress .progress > li:after
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+
+    position: absolute;
+    top: 6rem;
+    left: 0;
+
+    width: 100%;
+
+    content: attr(data-percent);
+    text-align: center;
+
+    color: #333;
+}
+.wordpress .progress svg
+{
+    width: 15rem;
+    height: 15rem;
+}
+.wordpress .progress svg:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+            transform: rotate(120deg);
+}
+.wordpress .progress svg:nth-child(2) path
+{
+    -webkit-animation: load 5s;
+            animation: load 5s;
+
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 412;
+    stroke: #0cf;
+}
+.html .progress > li
+{
+    font-family: 'Lato';
+    font-weight: 100;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: 2rem;
+
+    text-align: center;
+
+    color: initial;
+}
+.html .progress > li:before
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: -5rem;
+
+    width: 100%;
+
+    content: attr(data-name);
+    text-transform: uppercase;
+
+    color: #333;
+}
+.html .progress > li:after
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+
+    position: absolute;
+    top: 6rem;
+    left: 0;
+
+    width: 100%;
+
+    content: attr(data-percent);
+    text-align: center;
+
+    color: #333;
+}
+.html .progress svg
+{
+    width: 15rem;
+    height: 15rem;
+}
+.html .progress svg:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.html .progress svg:nth-child(2) path
+{
+    -webkit-animation: load 5s;
+            animation: load 5s;
+
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 531;
+    stroke: #0cf;
+}
+.css .progress > li
+{
+    font-family: 'Lato';
+    font-weight: 100;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: 2rem;
+
+    text-align: center;
+
+    color: initial;
+}
+.css .progress > li:before
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: -5rem;
+
+    width: 100%;
+
+    content: attr(data-name);
+    text-transform: uppercase;
+
+    color: #333;
+}
+.css .progress > li:after
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+
+    position: absolute;
+    top: 6rem;
+    left: 0;
+
+    width: 100%;
+
+    content: attr(data-percent);
+    text-align: center;
+
+    color: #333;
+}
+.css .progress svg
+{
+    width: 15rem;
+    height: 15rem;
+}
+.css .progress svg:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transform: rotate(-130deg);
+        -ms-transform: rotate(-130deg);
+            transform: rotate(-130deg);
+}
+.css .progress svg:nth-child(2) path
+{
+    -webkit-animation: load 5s;
+            animation: load 5s;
+
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 566;
+    stroke: #0cf;
+}
+.photoshop .progress > li
+{
+    font-family: 'Lato';
+    font-weight: 100;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin: 2rem;
+
+    text-align: center;
+
+    color: initial;
+}
+.photoshop .progress > li:before
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: -5rem;
+
+    width: 100%;
+
+    content: attr(data-name);
+    text-transform: uppercase;
+
+    color: #333;
+}
+.photoshop .progress > li:after
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+
+    position: absolute;
+    top: 6rem;
+    left: 0;
+
+    width: 100%;
+
+    content: attr(data-percent);
+    text-align: center;
+
+    color: #333;
+}
+.photoshop .progress svg
+{
+    width: 15rem;
+    height: 15rem;
+}
+.photoshop .progress svg:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.photoshop .progress svg:nth-child(2) path
+{
+    -webkit-animation: load 5s;
+            animation: load 5s;
+
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 673;
+    stroke: #0cf;
 }

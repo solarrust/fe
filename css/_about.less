@@ -1,9 +1,8 @@
 .content_block{
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 13rem;
-	margin-bottom: 5rem;
-	overflow: hidden;
+	// width: 90%;
+	// margin: 0 auto;
+	padding-top: 13rem;
+	padding-bottom: 5rem;
 
 	.tit{
 		display: block;
@@ -39,10 +38,12 @@
 
 		.descript{
 			display: inline-block;
-			margin: 0 4rem;
+			// margin: 0 4rem;
 			margin-left: 7rem;
 			vertical-align: text-top;
 			float: right;
+			max-width: 60rem;
+			box-sizing: border-box;
 
 			img{
 				margin-right: 3rem;
@@ -56,7 +57,7 @@
 				font-style: normal;
 				font-size: 1.6rem;
 				line-height: 125%;
-				max-width: 70rem;
+				// max-width: 70rem;
 			}
 		}
 	}
@@ -69,9 +70,9 @@
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	width: 100%;
 	max-width: 90%;
 	margin-top: 2.5rem;
+	overflow: hidden;
 
 	label {
 		color: @gray;
