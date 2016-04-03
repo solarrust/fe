@@ -1,0 +1,113 @@
+.works{
+	padding-top: 14%;
+	padding-bottom: 2%;
+
+	.work-block{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+    	align-items: center;
+
+    	.work{
+			height: 48.5rem;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: 1%;
+			position: relative;
+			color: @gray;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.box-shadow;
+
+			&:hover{
+				a{
+					opacity: 1;
+					box-shadow: 0px 2px 9px -3px @text-gray;
+					background-image: radial-gradient(rgba(255,255,255,.3)10%, rgba(255,255,255,0));
+				}
+
+				&:after{
+					opacity: .3;
+				}
+			}
+
+			&:after {
+				content: "";
+				display: block;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: white;
+				opacity: .6;
+				transition: opacity .6s;
+		    }
+
+			h2{
+				.lato;
+				font-weight: 300;
+				font-size: 4.8rem;
+				z-index: 5;
+			}
+
+			p{
+				.lato;
+				font-size: 2.4rem;
+				text-align: center;
+				margin: 4.5rem auto;
+				max-width: 39rem;
+				z-index: 5;
+			}
+
+			a{
+				border: 3px solid @gray;
+				width: 70%;
+				max-width: 37rem;
+				min-height: 6rem;
+				box-sizing: border-box;
+				text-transform: lowercase;
+				text-align: center;
+				font-size: 3rem;
+				text-decoration: none;
+				color: @gray;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transition: opacity .3s, background .3s;
+				cursor: pointer;
+				z-index: 5;
+				opacity: .5;
+			}
+		}
+
+		.mini{
+			width: 31%;
+
+			&:first-child{
+				background-image: url(../img/work1.jpg);
+			}
+
+			&:nth-child(2){
+				background-image: url(../img/work2.jpg);
+			}
+
+			&:nth-child(3){
+				background-image: url(../img/work3.jpg);
+			}
+
+			&:last-child{
+				background-image: url(../img/work5.jpg);
+			}
+		}
+
+		.maxi{
+			width: 64.3%;
+			background-image: url(../img/work4.jpg);
+		}
+	}
+}

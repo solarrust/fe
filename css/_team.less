@@ -1,0 +1,158 @@
+// Team
+
+.team{
+	position: relative;
+    overflow: visible;
+    width: 100%;
+    max-width: 100%;
+    height: 100rem;
+    padding-bottom: 0;
+
+	.shaped{
+		position: absolute;
+		z-index: -990;
+		top: -17rem;
+        width: 100%;
+        height: 100%;
+        background: url(../img/team.jpg) no-repeat center top;
+        background-size: cover;
+        float: left;
+        float: right;
+        shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+
+        &:after{
+        	background: rgba(51, 51, 51, 0.9);
+            background-size: .5rem .5rem;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .tit{
+
+    	h1{
+    		i{
+    			color: @white;
+    		}
+    	}
+
+    	p{
+    		color: @white;
+    	}
+
+		.descript{
+
+			p{
+				color: @white;
+			}
+		}
+    }
+
+    .treangle{
+        width: 63rem;
+        min-height: 16rem;
+        background: @blue;
+        shape-outside: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+        position: absolute;
+        bottom: 21rem;
+        right: 0;
+        z-index: -999;
+
+        &:after{
+            display: block;
+            width: 100%;
+            content: " ";
+            clear: both;
+        }
+    }
+
+    .team-block{
+    	width: 90%;
+    	margin: 0 auto;
+    	display: flex;
+    	justify-content: space-around;
+    	flex-direction: row;
+    	flex-wrap: nowrap;
+
+
+    	.team-item{
+    		display: inline-block;
+    		max-width: 25%;
+    		text-align: center;
+    		color: @white;
+    		box-sizing: border-box;
+    		margin: 0 4rem;
+    		font-size: 1.2rem;
+    		margin-top: 5rem;
+    		position: relative;
+
+    		img{
+    			border-radius: 50%;
+    			margin: 0 auto;
+    			margin-bottom: 3rem;
+                .box-shadow(rgba(0, 0, 0, .7));
+                // box-shadow: 0 2px 9px -3px rgba(0,0,0,0.7);
+    		}
+
+    		h4{
+    			.latoBold;
+    			font-size: 2rem;
+    			text-transform: uppercase;
+    			margin: .5rem auto;
+    		}
+
+    		.work{
+    			.lato;
+    			color: @blue;
+    			text-align: center;
+    		}
+
+    		.words{
+    			.lato;
+    			text-align: justify;
+    			margin-top: 1.5rem;
+    		}
+    	}
+    }
+
+    .social-icons{
+    	display: flex;
+    	position: absolute;
+    	top: 0;
+    	left: 50%;
+    	margin-left: -9.5rem;
+    	width: 19rem;
+    	height: 19rem;
+    	background: black;
+    	border-radius: 50%;
+    	justify-content: center;
+    	align-items: center;
+    	z-index: 0;
+    	opacity: 0;
+    	transition: opacity .3s linear;
+
+    	&:hover{
+    		opacity: 1;
+    	}
+
+
+    	i{
+    		display: inline-block;
+    		padding: 1rem;
+    		font-size: 2rem;
+    		color: @light-gray;
+    		cursor: pointer;
+    		z-index: -5;
+    		transition: color .3s linear;
+
+    		&:hover{
+    			color:@blue;
+    		}
+    	}
+
+    }
+}

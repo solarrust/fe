@@ -1,0 +1,106 @@
+// Our services
+
+.service{
+	padding-top: 0;
+	padding-bottom: 6.5rem;
+
+	.service-block{
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		.service-cont {
+			display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+
+			.block{
+				display: inline-block;
+				width: 50%;
+				padding: 3.5rem;
+				box-sizing: border-box;
+				vertical-align: middle;
+				border-bottom: 1px solid @light-gray;
+
+				&:nth-child(odd){
+					padding-left: 0;
+					border-right: 1px solid @light-gray;
+				}
+
+				&:nth-child(even){
+					padding-right: 0;
+				}
+
+				&:nth-last-child(2),
+				&:last-child {
+					border-bottom: none;
+				}
+
+				i{
+					display: inline-block;
+					width: 12.5rem;
+					height: 10.5rem;
+					float: left;
+					margin-right: 2rem;
+				}
+
+				.title{
+					.latoBold;
+					font-size: 2rem;
+					color: @orange;
+					margin: 1rem 0;
+				}
+
+				.text{
+					.lato;
+					font-size: 1.6rem;
+					color: @text-gray;
+				}
+			}
+		}
+	}
+}
+
+// Миксин для иконок
+.stitches-service(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+// Вывод иконок
+.service-i {
+    background-image: url(../img/icons/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+
+    &.service-service1 {
+        .stitches-service(-5px, -5px, 122px, 105px);
+    }
+
+    &.service-service2 {
+        .stitches-service(-5px, -120px, 122px, 105px);
+    }
+
+    &.service-service3 {
+        .stitches-service(-5px, -235px, 122px, 105px);
+    }
+
+    &.service-service4 {
+        .stitches-service(-5px, -350px, 122px, 105px);
+    }
+
+    &.service-service5 {
+        .stitches-service(-5px, -465px, 122px, 105px);
+    }
+
+    &.service-service6 {
+        .stitches-service(-5px, -580px, 122px, 105px);
+    }
+}
