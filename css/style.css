@@ -1540,3 +1540,7 @@ header nav ul li a:hover
 
     background-image: url(../img/work4.jpg);
 }
+.works .work-gallery
+{
+    background: #f7f7f7;
+}
