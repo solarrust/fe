@@ -18,7 +18,7 @@ html
 {
     display: block;
 
-    max-width: 90%;
+    max-width: 96rem;
     margin: 0 auto;
 }
 .content_block .tit:after
@@ -1890,4 +1890,72 @@ header nav ul li a:hover
 .twitter .twitter-block .underblock a:visited
 {
     color: #00a3cc;
+}
+.testimonial
+{
+    padding-top: 0;
+}
+.testimonial .logo-block
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    max-width: 96rem;
+    margin: 0 auto;
+    margin: 6rem auto;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.testimonial .logo-block a
+{
+    line-height: 8.5rem;
+
+    display: block;
+
+    width: 12rem;
+    height: 6.5rem;
+
+    text-align: center;
+}
+.testimonial .logo-block a img
+{
+    display: inline-block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    opacity: .3;
+}
+.testimonial .testimonial-block
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
 }
