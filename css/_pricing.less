@@ -1,0 +1,56 @@
+.pricing{
+	max-width: 96rem;
+
+	.price-shits{
+		display: flex;
+		flex-directon: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+
+		.price-item{
+			width: 22rem;
+			min-height: 57rem;
+			box-sizing: border-box;
+			text-align: center;
+			.box-shadow;
+
+			h3{
+				display: block;
+				width: 100%;
+				height: 8rem;
+				background: @blue;
+				color: @white;
+				font-size: 2.2rem;
+				.latoBold;
+				line-height: 8rem;
+			}
+
+			.price{
+				.latoBold;
+				font-size: 6rem;
+				color: @gray;
+				padding: 5.5rem 0;
+
+				&:before{
+					content: "$ ";
+					font-size: 3.6rem;
+					vertical-align: super;
+				}
+
+				&:after{
+					content: " / mo";
+					font-size: 2.4rem;
+					font-weight: 300;
+				}
+			}
+
+			ul{
+				list-style-type: none;;
+				.lato;
+				font-size: 1.4rem;
+				line-height: 4rem;
+				color: @gray;
+			}
+		}
+	}
+}
