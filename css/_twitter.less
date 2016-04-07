@@ -1,0 +1,114 @@
+.twitter{
+	position: relative;
+    overflow: visible;
+    width: 100%;
+    max-width: 100%;
+    height: 83rem;
+    padding-bottom: 0;
+
+	.shaped{
+		position: absolute;
+		z-index: -1000;
+		top: -17rem;
+        width: 100%;
+        height: 100%;
+        background: url(../img/team.jpg) no-repeat center top;
+        background-size: cover;
+        float: left;
+        float: right;
+        shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+
+        &:after{
+        	background: rgba(51, 51, 51, 0.9);
+            background-size: .5rem .5rem;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .treangle{
+        width: 63rem;
+        min-height: 16rem;
+        background: @blue;
+        shape-outside: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+        position: absolute;
+        bottom: 16rem;
+        right: 0;
+        z-index: -1009;
+
+        &:after{
+            display: block;
+            width: 100%;
+            content: " ";
+            clear: both;
+        }
+    }
+
+    .twitter-block{
+    	display: flex;
+    	flex-direction: column;
+    	flex-wrap: nowrap;
+    	justify-content: space-around;
+    	align-items: center;
+    	width: 100%;
+    	padding-top: 8rem;
+
+    	.big-icon{
+			width: 10rem;
+			height: 10rem;
+			background: url(../img/icons/twitter-logo.png) no-repeat center;
+    	}
+
+    	p{
+    		.lato;
+    		font-size: 1.8rem;
+    		color: @white;
+    		font-weight: 300;
+    		max-width: 81rem;
+    		text-align: center;
+    		max-height: 20rem;
+    		margin: 9rem auto;
+    	}
+
+    	.dots{
+    		display: block;
+
+    		li{
+    			display: inline-block;
+    			width: 1rem;
+    			height: 1rem;
+    			border-radius: 50%;
+    			background: #ccc;
+    			margin: 0 .2rem;
+    			cursor: pointer;
+			}
+
+    		.active{
+    			background: @text-gray;
+    		}
+    	}
+
+    	.underblock{
+    		font-size: 2.2rem;
+    		margin: 3rem auto;
+
+    		a{
+    			color: @blue;
+    			text-decoration: none;
+
+    			&:hover,
+    			&:active{
+					border-bottom: 1px solid @blue;
+    			}
+
+    			&:visited{
+    				color: darken(@blue, 10%)
+    			}
+    		}
+    	}
+    }
+}

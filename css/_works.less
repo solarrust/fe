@@ -112,21 +112,28 @@
 	}
 
 	.work-gallery{
-		display: flex;
-    	flex-direction: column;
-    	justify-content: space-around;
-    	align-items: center;
-    	align-content: space-between;
+		// display: flex;
+  //   	flex-direction: column;
+  //   	justify-content: space-around;
+  //   	align-items: center;
+  //   	align-content: space-between;
     	border-top: 1px solid #f1f1f1;
+    	position: relative;
+    	height: 135rem;
+    	text-align: center;
+	    overflow: visible;
+	    width: 100%;
+	    max-width: 100%;
 
     	.shaped{
-    		shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-		    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    		shape-outside: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+		    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 		    background: @back-gray;
 		    width: 100%;
-		    height: 135rem;
+		    height: 100%;
 		    box-sizing: border-box;
 		    position: absolute;
+		    top: 0;
 		    z-index: -999;
     	}
 
