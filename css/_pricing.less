@@ -1,11 +1,30 @@
 .pricing{
-	max-width: 96rem;
+	max-width: 100%;
+	border-top: 1px solid #f1f1f1;
+    position: relative;
+	overflow: visible;
+	width: 100%;
+	padding-bottom: 15rem;
+
+    .shaped{
+    	shape-outside: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+		background: @back-gray;
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		z-index: -999;
+    }
 
 	.price-shits{
 		display: flex;
 		flex-directon: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
+		margin: 10rem auto;
+		max-width: 96rem;
 
 		.price-item{
 			width: 22rem;
@@ -29,7 +48,7 @@
 				.latoBold;
 				font-size: 6rem;
 				color: @gray;
-				padding: 5.5rem 0;
+				padding: 5rem 0;
 
 				&:before{
 					content: "$ ";
@@ -50,6 +69,33 @@
 				font-size: 1.4rem;
 				line-height: 4rem;
 				color: @gray;
+			}
+
+			button{
+				width: 12rem;
+				height: 3.5rem;
+				background: none;
+				border: 1px solid @gray;
+				border-radius: 5%;
+				box-sizing: border-box;
+				.latoBold;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				text-align: center;
+				margin: 2.5rem auto;
+				transition: background .3s;
+
+				&:hover{
+					background: lighten(@back-gray, 1%)
+				}
+			}
+
+			.bottom-text{
+				.lato;
+				font-size: 1.1rem;
+				line-height: 3rem;
+				color: @text-gray;
+				text-transform: uppercase;
 			}
 		}
 	}
