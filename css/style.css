@@ -1542,5 +1542,204 @@ header nav ul li a:hover
 }
 .works .work-gallery
 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    border-top: 1px solid #f1f1f1;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+            align-content: space-between;
+}
+.works .work-gallery .shaped
+{
+    position: absolute;
+    z-index: -999;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 135rem;
+
     background: #f7f7f7;
+
+    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+            shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+}
+.works .work-gallery h1
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+
+    margin-top: 13rem;
+    margin-bottom: 0;
+
+    text-transform: uppercase;
+
+    color: #666;
+}
+.works .work-gallery .under-title
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 300;
+
+    margin: 3rem auto;
+
+    color: #333;
+}
+.works .work-gallery nav
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 142%;
+
+    margin: 5.5rem auto;
+}
+.works .work-gallery nav a
+{
+    font-weight: 500;
+
+    margin: 5px;
+    padding: 1rem 1.5rem;
+
+    text-decoration: none;
+
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 9px -3px #999;
+}
+.works .work-gallery nav a.active,
+.works .work-gallery nav a:active
+{
+    background: #f1f1f1;
+    box-shadow: 0 2px 9px -3px #f1f1f1;
+}
+.works .work-gallery .gallery-block
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    max-width: 96rem;
+    margin: 2rem auto;
+
+    text-align: center;
+
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.works .work-gallery .gallery-block .pic
+{
+    margin-bottom: 3rem;
+
+    box-shadow: 0 2px 9px -3px #999;
+
+    -webkit-flex-basis: 30rem;
+    -ms-flex-preferred-size: 30rem;
+            flex-basis: 30rem;
+}
+.works .work-gallery .gallery-block .pic .img
+{
+    width: 100%;
+    height: 16rem;
+    margin-bottom: 3rem;
+}
+.works .work-gallery .gallery-block .pic:first-child .img
+{
+    background: url(../img/gallery1.jpg) no-repeat center;
+}
+.works .work-gallery .gallery-block .pic:nth-child(2) .img
+{
+    background: url(../img/gallery2.jpg) no-repeat center;
+}
+.works .work-gallery .gallery-block .pic:nth-child(3) .img
+{
+    background: url(../img/gallery3.jpg) no-repeat center;
+}
+.works .work-gallery .gallery-block .pic:nth-child(4) .img
+{
+    background: url(../img/gallery4.jpg) no-repeat center;
+}
+.works .work-gallery .gallery-block .pic:nth-child(5) .img
+{
+    background: url(../img/gallery5.jpg) no-repeat center;
+}
+.works .work-gallery .gallery-block .pic:nth-child(6) .img
+{
+    background: url(../img/gallery6.jpg) no-repeat center;
+}
+.works .work-gallery .gallery-block .pic h3
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    color: #333;
+}
+.works .work-gallery .gallery-block .pic p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    padding: 1.5rem 0;
+
+    color: #333;
+}
+.works .work-gallery button
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 142%;
+
+    display: block;
+
+    width: 14rem;
+    height: 3rem;
+    margin: 6rem auto;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border: 1px solid transparent;
+    border-right: 1px solid #00a3cc;
+    border-bottom: 2px solid #00a3cc;
+    border-radius: 1px;
+    outline: none;
+    background: #0cf;
+}
+.works .work-gallery button:active
+{
+    border-right: 1px solid #0cf;
+    border-bottom: 2px solid #0cf;
 }
