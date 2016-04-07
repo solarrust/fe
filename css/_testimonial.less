@@ -1,5 +1,6 @@
 .testimonial{
 	padding-top: 0;
+	padding-bottom: 19rem-6.5rem;
 
 	.logo-block{
 		max-width: 96rem;
@@ -26,14 +27,60 @@
 		}
 	}
 
+	ul.dots{
+		margin: 7.5rem auto;
+	}
+
 	.testimonial-block{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-between;
+		max-width: 96rem;
+		margin: 0 auto;
 
 		.testimonial-item{
-			
+			width: 30rem;
+			height: 20rem;
+			background: @back-gray;
+			border: darken(@back-gray, 10%);
+			border-radius: 1%;
+			padding: 2.5rem 1.2rem;
+			box-sizing: border-box;
+			.lato;
+
+			.text{
+				.latoIt;
+				font-size: 1.6rem;
+				line-height: 125%;
+				color: @text-gray;
+				min-height: 10rem-1.5rem;
+			}
+
+			.login{
+				color: @blue;
+				font-size: 1.4rem;
+				line-height: 3rem;
+			}
+
+			.article{
+				color: @text-gray;
+				font-size: 1.2rem;
+			}
+
+			img{
+				float: left;
+				margin-right: 1.5rem;
+				border-radius: 5%;
+			}
+
+			hr{
+				display: block;
+				border: 1px solid darken(@back-gray, 10%);
+				width: 100%;
+				margin: 1.5rem auto;
+				background: none;
+			}
 		}
 	}
 }

@@ -11,6 +11,8 @@ html
 }
 .content_block
 {
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 13rem;
     padding-bottom: 5rem;
 }
@@ -84,6 +86,29 @@ html
     font-weight: 300;
     font-style: normal;
     line-height: 125%;
+}
+.dots
+{
+    display: block;
+
+    text-align: center;
+}
+.dots li
+{
+    display: inline-block;
+
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .2rem;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    background: #ccc;
+}
+.dots .active
+{
+    background: #999;
 }
 header
 {
@@ -1849,27 +1874,6 @@ header nav ul li a:hover
 
     color: #fff;
 }
-.twitter .twitter-block .dots
-{
-    display: block;
-}
-.twitter .twitter-block .dots li
-{
-    display: inline-block;
-
-    width: 1rem;
-    height: 1rem;
-    margin: 0 .2rem;
-
-    cursor: pointer;
-
-    border-radius: 50%;
-    background: #ccc;
-}
-.twitter .twitter-block .dots .active
-{
-    background: #999;
-}
 .twitter .twitter-block .underblock
 {
     font-size: 2.2rem;
@@ -1894,6 +1898,7 @@ header nav ul li a:hover
 .testimonial
 {
     padding-top: 0;
+    padding-bottom: 12.5rem;
 }
 .testimonial .logo-block
 {
@@ -1939,6 +1944,10 @@ header nav ul li a:hover
 
     opacity: .3;
 }
+.testimonial ul.dots
+{
+    margin: 7.5rem auto;
+}
 .testimonial .testimonial-block
 {
     display: -webkit-box;
@@ -1946,6 +1955,9 @@ header nav ul li a:hover
     display: -ms-flexbox;
     display:         flex;
             flex-direction: row;
+
+    max-width: 96rem;
+    margin: 0 auto;
 
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1958,4 +1970,141 @@ header nav ul li a:hover
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
             justify-content: space-between;
+}
+.testimonial .testimonial-block .testimonial-item
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+
+    box-sizing: border-box;
+    width: 30rem;
+    height: 20rem;
+    padding: 2.5rem 1.2rem;
+
+    border: #dedede;
+    border-radius: 1%;
+    background: #f7f7f7;
+}
+.testimonial .testimonial-block .testimonial-item .text
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 125%;
+
+    min-height: 8.5rem;
+
+    color: #999;
+}
+.testimonial .testimonial-block .testimonial-item .login
+{
+    font-size: 1.4rem;
+    line-height: 3rem;
+
+    color: #0cf;
+}
+.testimonial .testimonial-block .testimonial-item .article
+{
+    font-size: 1.2rem;
+
+    color: #999;
+}
+.testimonial .testimonial-block .testimonial-item img
+{
+    float: left;
+
+    margin-right: 1.5rem;
+
+    border-radius: 5%;
+}
+.testimonial .testimonial-block .testimonial-item hr
+{
+    display: block;
+
+    width: 100%;
+    margin: 1.5rem auto;
+
+    border: 1px solid #dedede;
+    background: none;
+}
+.pricing
+{
+    max-width: 96rem;
+}
+.pricing .price-shits
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    flex-directon: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.pricing .price-shits .price-item
+{
+    box-sizing: border-box;
+    width: 22rem;
+    min-height: 57rem;
+
+    text-align: center;
+
+    box-shadow: 0 2px 9px -3px #999;
+}
+.pricing .price-shits .price-item h3
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 8rem;
+
+    display: block;
+
+    width: 100%;
+    height: 8rem;
+
+    color: #fff;
+    background: #0cf;
+}
+.pricing .price-shits .price-item .price
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 6rem;
+    font-weight: 600;
+
+    padding: 5.5rem 0;
+
+    color: #333;
+}
+.pricing .price-shits .price-item .price:before
+{
+    font-size: 3.6rem;
+
+    content: '$ ';
+    vertical-align: super;
+}
+.pricing .price-shits .price-item .price:after
+{
+    font-size: 2.4rem;
+    font-weight: 300;
+
+    content: ' / mo';
+}
+.pricing .price-shits .price-item ul
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 4rem;
+
+    list-style-type: none;
+
+    color: #333;
 }

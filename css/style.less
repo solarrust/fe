@@ -43,6 +43,8 @@ html{
 .content_block{
 	padding-top: 13rem;
 	padding-bottom: 5rem;
+	margin-left: auto;
+	margin-right: auto;
 
 	.tit{
 		display: block;
@@ -101,6 +103,25 @@ html{
 	}
 }
 
+.dots{
+    display: block;
+    text-align: center;
+
+    li{
+    	display: inline-block;
+    	width: 1rem;
+    	height: 1rem;
+    	border-radius: 50%;
+    	background: #ccc;
+    	margin: 0 .2rem;
+    	cursor: pointer;
+	}
+
+    .active{
+    	background: @text-gray;
+    }
+}
+
 @import url(_header.less);
 @import url(_mainScreen.less);
 @import url(_about.less);
@@ -111,6 +132,7 @@ html{
 @import url(_works.less);
 @import url(_twitter.less);
 @import url(_testimonial.less);
+@import url(_pricing.less);
 
 
 
