@@ -1,0 +1,151 @@
+.touch{
+	max-width: 96rem;
+	padding-bottom: 15.5rem;
+
+	.tit{
+		padding-bottom: 12rem;
+	}
+
+	&:after{
+		content: "";
+		display: block;
+		width: 100%;
+		clear: both;
+	}
+
+	form{
+		max-width: 56rem;
+		float: left;
+
+		input,
+		textarea {
+			box-sizing: border-box;
+			height: 5rem;
+			border: 1px solid @light-gray;
+			border-radius: 4px;
+			padding: 2rem;
+			font-size: 1.6rem;
+			.lato;
+			color: @text-gray;
+			margin: .5rem;
+			width: 26.5rem;
+
+			&[placeholder]{
+				text-overflow: ellipsis;
+			}
+
+			&:active,
+			&:focus {
+				outline: none;
+			}
+
+			&[name="subj"]{
+				width: 54.3rem;
+			}
+		}
+
+		textarea{
+			height:16rem;
+			width: 54.3rem;
+		}
+
+		button{
+			width: 14.5rem;
+			height: 5rem;
+			background: @blue;
+			.lato;
+			color: @white;
+			font-size: 1.6rem;
+			line-height: 5rem;
+			text-align: center;
+			margin: .5rem;
+			border: none;
+			border-radius: 4px;
+			border-bottom: 2px solid darken(@blue, 10%);
+			border-right: 1px solid darken(@blue, 10%);
+
+			&:active{
+				border-bottom: 2px solid @blue;
+				border-right: 1px solid @blue;
+			}
+		}
+
+		::-webkit-input-placeholder {color: lighten(@text-gray, 20%)}
+		::-moz-placeholder          {color: lighten(@text-gray, 20%)}/* Firefox 19+ */
+		:-moz-placeholder           {color: lighten(@text-gray, 20%)}/* Firefox 18- */
+		:-ms-input-placeholder      {color: lighten(@text-gray, 20%)}
+	}
+
+	.info{
+		margin: 0 1rem;
+		padding: 0 1rem;
+		float: left;
+    	max-width: 35rem;
+    	max-height: 28.5rem;
+    	overflow: hidden;
+
+		h3{
+			.latoBold;
+			font-size: 1.6rem;
+			color: @gray;
+			text-transform: uppercase;
+			text-align: left;
+		}
+
+		p{
+			.lato;
+			font-size: 1.6rem;
+			line-height: 137%;
+			color: @gray6;
+			margin: 2.5rem 0;
+		}
+
+		ul{
+			list-style-type: none;
+			.lato;
+			font-size: 1.6rem;
+			color: @gray6;
+			line-height: 137%;
+
+			li{
+				padding: 1rem 0;
+
+				&.address:before{
+					content: "\f041";
+					font-family: FontAwesome;
+					font-size: 2.2rem;
+					float: left;
+					margin-left: 1rem;
+					margin-right: 2.5rem;
+				}
+
+				&.tel:before{
+					content: "\f095";
+					font-family: FontAwesome;
+					font-size: 2.2rem;
+					float: left;
+					margin-left: 1rem;
+					margin-right: 2.5rem;
+				}
+
+				&.email:before{
+					content: "\f0e0";
+					font-family: FontAwesome;
+					font-size: 2.2rem;
+					float: left;
+					margin-left: 1rem;
+					margin-right: 2.5rem;
+				}
+
+				&.time:before{
+					content: "\f017";
+					font-family: FontAwesome;
+					font-size: 2.2rem;
+					float: left;
+					margin-left: 1rem;
+					margin-right: 2.5rem;
+				}
+			}
+		}
+	}
+}

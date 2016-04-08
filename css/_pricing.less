@@ -18,6 +18,25 @@
 		z-index: -999;
     }
 
+    .treangle{
+        width: 63rem;
+        min-height: 16rem;
+        background: @blue;
+        shape-outside: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1009;
+
+        &:after{
+            display: block;
+            width: 100%;
+            content: " ";
+            clear: both;
+        }
+    }
+
 	.price-shits{
 		display: flex;
 		flex-directon: row;

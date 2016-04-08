@@ -110,6 +110,12 @@ html
 {
     background: #999;
 }
+button:focus,
+button:active,
+button:visited
+{
+    outline: none;
+}
 header
 {
     position: absolute;
@@ -2057,6 +2063,32 @@ header nav ul li a:hover
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
+.pricing .treangle
+{
+    position: absolute;
+    z-index: -1009;
+    right: 0;
+    bottom: 0;
+
+    width: 63rem;
+    min-height: 16rem;
+
+    background: #0cf;
+
+    -webkit-shape-outside: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+            shape-outside: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+    -webkit-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+            clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 30% 55%);
+}
+.pricing .treangle:after
+{
+    display: block;
+    clear: both;
+
+    width: 100%;
+
+    content: ' ';
+}
 .pricing .price-shits
 {
     display: -webkit-box;
@@ -2170,4 +2202,205 @@ header nav ul li a:hover
     text-transform: uppercase;
 
     color: #999;
+}
+.touch
+{
+    max-width: 96rem;
+    padding-bottom: 15.5rem;
+}
+.touch .tit
+{
+    padding-bottom: 12rem;
+}
+.touch:after
+{
+    display: block;
+    clear: both;
+
+    width: 100%;
+
+    content: '';
+}
+.touch form
+{
+    float: left;
+
+    max-width: 56rem;
+    /* Firefox 19+ */
+    /* Firefox 18- */
+}
+.touch form input,
+.touch form textarea
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+
+    box-sizing: border-box;
+    width: 26.5rem;
+    height: 5rem;
+    margin: .5rem;
+    padding: 2rem;
+
+    color: #999;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+}
+.touch form input[placeholder],
+.touch form textarea[placeholder]
+{
+    text-overflow: ellipsis;
+}
+.touch form input:active,
+.touch form textarea:active,
+.touch form input:focus,
+.touch form textarea:focus
+{
+    outline: none;
+}
+.touch form input[name='subj'],
+.touch form textarea[name='subj']
+{
+    width: 54.3rem;
+}
+.touch form textarea
+{
+    width: 54.3rem;
+    height: 16rem;
+}
+.touch form button
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 5rem;
+
+    width: 14.5rem;
+    height: 5rem;
+    margin: .5rem;
+
+    text-align: center;
+
+    color: #fff;
+    border: none;
+    border-right: 1px solid #00a3cc;
+    border-bottom: 2px solid #00a3cc;
+    border-radius: 4px;
+    background: #0cf;
+}
+.touch form button:active
+{
+    border-right: 1px solid #0cf;
+    border-bottom: 2px solid #0cf;
+}
+.touch form ::-webkit-input-placeholder
+{
+    color: #ccc;
+}
+.touch form ::-moz-placeholder
+{
+    color: #ccc;
+}
+.touch form :-moz-placeholder
+{
+    color: #ccc;
+}
+.touch form :-ms-input-placeholder
+{
+    color: #ccc;
+}
+.touch .info
+{
+    float: left;
+    overflow: hidden;
+
+    max-width: 35rem;
+    max-height: 28.5rem;
+    margin: 0 1rem;
+    padding: 0 1rem;
+}
+.touch .info h3
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-align: left;
+    text-transform: uppercase;
+
+    color: #333;
+}
+.touch .info p
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 137%;
+
+    margin: 2.5rem 0;
+
+    color: #666;
+}
+.touch .info ul
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 137%;
+
+    list-style-type: none;
+
+    color: #666;
+}
+.touch .info ul li
+{
+    padding: 1rem 0;
+}
+.touch .info ul li.address:before
+{
+    font-family: FontAwesome;
+    font-size: 2.2rem;
+
+    float: left;
+
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+
+    content: '\f041';
+}
+.touch .info ul li.tel:before
+{
+    font-family: FontAwesome;
+    font-size: 2.2rem;
+
+    float: left;
+
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+
+    content: '\f095';
+}
+.touch .info ul li.email:before
+{
+    font-family: FontAwesome;
+    font-size: 2.2rem;
+
+    float: left;
+
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+
+    content: '\f0e0';
+}
+.touch .info ul li.time:before
+{
+    font-family: FontAwesome;
+    font-size: 2.2rem;
+
+    float: left;
+
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+
+    content: '\f017';
 }
