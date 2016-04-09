@@ -1,0 +1,82 @@
+footer{
+
+	.map{
+		height: 55rem;
+	}
+
+	.social{
+		width: 100%;
+		height: 11.5rem;
+		background: #2f2e2e;
+		line-height: 11.5rem;
+		text-align: center;
+		box-sizing: border-box;
+
+		&:before{
+			content: "";
+			width: 100%;
+			height: 3px;
+			display: block;
+			background: @white;
+		}
+
+		a{
+			color: inherit;
+			cursor: inherit;
+		}
+
+		ul{
+			display: block;
+
+			li{
+				display: inline-block;
+				margin: 0 1rem;
+				color: @white;
+				font-size: 3rem;
+				font-family: "Font Awesome";
+				transition: color .3s;
+
+				&:hover{
+					color: @blue;
+				}
+
+				&:first-of-type{
+					cursor: url(../img/icons/cats/cat_eyes.png), auto;
+				}
+
+				&:nth-of-type(2){
+					cursor: url(../img/icons/cats/cat_walk.png), auto;
+				}
+
+				&:nth-of-type(3){
+					cursor: url(../img/icons/cats/cat_poo.png), auto;
+				}
+
+				&:nth-of-type(4){
+					cursor: url(../img/icons/cats/cat_paper.png), auto;
+				}
+
+				&:nth-of-type(5){
+					cursor: url(../img/icons/cats/cat_laptop.png), auto;
+				}
+			}
+		}
+	}
+
+	.copy{
+		height: 7.5rem;
+		width: 100%;
+		background: @blue;
+		text-align: center;
+		line-height: 7.5rem;
+		color: @text-gray;
+		opacity: .7;
+		.latoBold;
+		font-size: 1.6rem;
+
+		span{
+			color: @white;
+			opacity: .7;
+		}
+	}
+}

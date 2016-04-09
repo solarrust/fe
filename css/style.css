@@ -2404,3 +2404,99 @@ header nav ul li a:hover
 
     content: '\f017';
 }
+footer .map
+{
+    height: 55rem;
+}
+footer .social
+{
+    line-height: 11.5rem;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 11.5rem;
+
+    text-align: center;
+
+    background: #2f2e2e;
+}
+footer .social:before
+{
+    display: block;
+
+    width: 100%;
+    height: 3px;
+
+    content: '';
+
+    background: #fff;
+}
+footer .social a
+{
+    cursor: inherit;
+
+    color: inherit;
+}
+footer .social ul
+{
+    display: block;
+}
+footer .social ul li
+{
+    font-family: 'Font Awesome';
+    font-size: 3rem;
+
+    display: inline-block;
+
+    margin: 0 1rem;
+
+    -webkit-transition: color .3s;
+            transition: color .3s;
+
+    color: #fff;
+}
+footer .social ul li:hover
+{
+    color: #0cf;
+}
+footer .social ul li:first-of-type
+{
+    cursor: url(../img/icons/cats/cat_eyes.png), auto;
+}
+footer .social ul li:nth-of-type(2)
+{
+    cursor: url(../img/icons/cats/cat_walk.png), auto;
+}
+footer .social ul li:nth-of-type(3)
+{
+    cursor: url(../img/icons/cats/cat_poo.png), auto;
+}
+footer .social ul li:nth-of-type(4)
+{
+    cursor: url(../img/icons/cats/cat_paper.png), auto;
+}
+footer .social ul li:nth-of-type(5)
+{
+    cursor: url(../img/icons/cats/cat_laptop.png), auto;
+}
+footer .copy
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 7.5rem;
+
+    width: 100%;
+    height: 7.5rem;
+
+    text-align: center;
+
+    opacity: .7;
+    color: #999;
+    background: #0cf;
+}
+footer .copy span
+{
+    opacity: .7;
+    color: #fff;
+}
