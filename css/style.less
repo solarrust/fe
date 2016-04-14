@@ -163,4 +163,59 @@ button{
 @import url(_footer.less);
 
 
+// Для мобильных телефонов
+.for-mobile {
+	display: none;
+}
 
+@media screen and (max-width: 736px){
+	body{
+		overflow: hidden;
+	}
+
+	.for-mobile{
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../img/main.jpg) no-repeat center;
+		z-index: 10;
+		color: white;
+		padding: 2rem;
+		box-sizing: border-box;
+
+		&:after{
+			content: " ";
+			display: block;
+			background-image: -webkit-repeating-radial-gradient(center center, rgba(255,255,255,.4), rgba(255,255,255,.5) 1px, transparent 1px, transparent 100%);
+            background-image: -moz-repeating-radial-gradient(center center, rgba(255,255,255,.4), rgba(255,255,255,.5) 1px, transparent 1px, transparent 100%);
+            background-image: -ms-repeating-radial-gradient(center center, rgba(255,255,255,.4), rgba(255,255,255,.5) 1px, transparent 1px, transparent 100%);
+            background-image: repeating-radial-gradient(center center, rgba(255,255,255,.4), rgba(255,255,255,.5) 1px, transparent 1px, transparent 100%);
+            background-size: .5rem .5rem;
+			width: 100%;
+		    height: 100%;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		}
+
+		h1{
+			display: block;
+			color: @blue;
+			font-size: 20vmin;
+			max-width: 80%;
+		}
+
+		p{
+			display: block;
+			max-width: 80%;
+			font-size: 10vmin;
+		}
+
+		i{
+			color: @orange;
+		}
+	}
+}

@@ -3,6 +3,13 @@ html(lang="ru")
 	include parts/mixins
 	include parts/_head
 	body
+		div(class="for-mobile")
+			h1 Привет!
+			p Зайди на эту страницу с компьютера!
+				br
+				| Она классная 
+				i.
+					=)
 		include parts/_header
 		main
 			include parts/_mainScreen
