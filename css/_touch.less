@@ -14,8 +14,10 @@
 	}
 
 	form{
-		max-width: 56rem;
+		width: 56rem;
 		float: left;
+		max-width: 61%;
+		display: inline-block;
 
 		input,
 		textarea {
@@ -29,6 +31,7 @@
 			color: @text-gray;
 			margin: .5rem;
 			width: 26.5rem;
+			max-width: 100%;
 
 			&[placeholder]{
 				text-overflow: ellipsis;
@@ -80,9 +83,11 @@
 		margin: 0 1rem;
 		padding: 0 1rem;
 		float: left;
-    	max-width: 35rem;
+    	width: 35rem;
     	max-height: 28.5rem;
-    	overflow: hidden;
+    	max-width: 34%;
+    	display: inline-block;
+    	box-sizing: border-box;
 
 		h3{
 			.latoBold;

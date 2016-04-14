@@ -2,7 +2,7 @@
 	shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
     background: @back-gray;
-    height: 94rem;
+    min-height: 94rem;
     box-sizing: border-box;
 
     h2{
@@ -25,10 +25,13 @@
     }
 
     .circles{
-    	display: block;
+    	display: flex;
     	max-width: 90%;
     	margin: 0 auto;
     	text-align: center;
+    	flex-direction: row;
+    	flex-wrap: nowrap;
+    	justify-content: center;
 
     	.circle_block{
     		display: inline-block;

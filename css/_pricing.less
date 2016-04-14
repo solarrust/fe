@@ -41,12 +41,13 @@
 		display: flex;
 		flex-directon: row;
 		flex-wrap: nowrap;
-		justify-content: space-between;
+		justify-content: space-around;
 		margin: 10rem auto;
 		max-width: 96rem;
 
 		.price-item{
 			width: 22rem;
+			max-width: 20%;
 			min-height: 57rem;
 			box-sizing: border-box;
 			text-align: center;
@@ -67,7 +68,7 @@
 				.latoBold;
 				font-size: 6rem;
 				color: @gray;
-				padding: 5rem 0;
+				padding: 5rem 1rem;
 
 				&:before{
 					content: "$ ";

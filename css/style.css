@@ -20,6 +20,7 @@ html
 {
     display: block;
 
+    width: 90%;
     max-width: 96rem;
     margin: 0 auto;
 }
@@ -65,7 +66,8 @@ html
     float: right;
 
     box-sizing: border-box;
-    max-width: 60rem;
+    width: 60rem;
+    max-width: 60%;
     margin-left: 7rem;
 
     vertical-align: text-top;
@@ -544,7 +546,7 @@ header nav ul li a:hover
 .skils
 {
     box-sizing: border-box;
-    height: 94rem;
+    min-height: 94rem;
 
     background: #f7f7f7;
 
@@ -581,12 +583,28 @@ header nav ul li a:hover
 }
 .skils .circles
 {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
 
     max-width: 90%;
     margin: 0 auto;
 
     text-align: center;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
 }
 .skils .circles .circle_block
 {
@@ -921,7 +939,7 @@ header nav ul li a:hover
 
     width: 100%;
     max-width: 100%;
-    height: 100rem;
+    min-height: 100rem;
     padding-bottom: 0;
 }
 .team .shaped
@@ -1026,7 +1044,6 @@ header nav ul li a:hover
 
     box-sizing: border-box;
     max-width: 25%;
-    margin: 0 4rem;
     margin-top: 5rem;
 
     text-align: center;
@@ -1048,6 +1065,7 @@ header nav ul li a:hover
     font-weight: 600;
 
     margin: .5rem auto;
+    padding: 0 4rem;
 
     text-transform: uppercase;
 }
@@ -1055,6 +1073,8 @@ header nav ul li a:hover
 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+
+    padding: 0 4rem;
 
     text-align: center;
 
@@ -1066,6 +1086,7 @@ header nav ul li a:hover
     font-weight: 300;
 
     margin-top: 1.5rem;
+    padding: 0 4rem;
 
     text-align: justify;
 }
@@ -1364,6 +1385,7 @@ header nav ul li a:hover
 .fun-facts .facts-block .facts-cont
 {
     width: 25%;
+    max-width: 23.5rem;
     padding: 3.5rem 0;
 
     text-align: center;
@@ -1396,7 +1418,7 @@ header nav ul li a:hover
 .fun-facts .facts-block .facts-cont .title
 {
     font-family: 'Lato', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 300;
 
     margin: 4.5rem 0 3rem 0;
@@ -1453,6 +1475,8 @@ header nav ul li a:hover
 
     height: 48.5rem;
     margin: 1%;
+
+    text-align: center;
 
     color: #333;
     background-repeat: no-repeat;
@@ -1593,7 +1617,7 @@ header nav ul li a:hover
 
     width: 100%;
     max-width: 100%;
-    height: 135rem;
+    min-height: 135rem;
 
     text-align: center;
 
@@ -1607,7 +1631,7 @@ header nav ul li a:hover
 
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 103%;
 
     background: #f7f7f7;
 
@@ -1804,10 +1828,10 @@ header nav ul li a:hover
     background: url(../img/team.jpg) no-repeat center top;
     background-size: cover;
 
-    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-            shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    -webkit-shape-outside: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
+            shape-outside: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
+    -webkit-clip-path: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
+            clip-path: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
 }
 .twitter .shaped:after
 {
@@ -1886,7 +1910,8 @@ header nav ul li a:hover
     font-size: 1.8rem;
     font-weight: 300;
 
-    max-width: 81rem;
+    width: 81rem;
+    max-width: 90%;
     max-height: 20rem;
     margin: 9rem auto;
 
@@ -1939,10 +1964,9 @@ header nav ul li a:hover
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 .testimonial .logo-block a
 {
@@ -1986,10 +2010,9 @@ header nav ul li a:hover
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 .testimonial .testimonial-block .testimonial-item
 {
@@ -2117,15 +2140,15 @@ header nav ul li a:hover
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+            justify-content: space-around;
 }
 .pricing .price-shits .price-item
 {
     box-sizing: border-box;
     width: 22rem;
+    max-width: 20%;
     min-height: 57rem;
 
     text-align: center;
@@ -2153,7 +2176,7 @@ header nav ul li a:hover
     font-size: 6rem;
     font-weight: 600;
 
-    padding: 5rem 0;
+    padding: 5rem 1rem;
 
     color: #333;
 }
@@ -2237,9 +2260,11 @@ header nav ul li a:hover
 }
 .touch form
 {
+    display: inline-block;
     float: left;
 
-    max-width: 56rem;
+    width: 56rem;
+    max-width: 61%;
     /* Firefox 19+ */
     /* Firefox 18- */
 }
@@ -2252,6 +2277,7 @@ header nav ul li a:hover
 
     box-sizing: border-box;
     width: 26.5rem;
+    max-width: 100%;
     height: 5rem;
     margin: .5rem;
     padding: 2rem;
@@ -2325,10 +2351,12 @@ header nav ul li a:hover
 }
 .touch .info
 {
+    display: inline-block;
     float: left;
-    overflow: hidden;
 
-    max-width: 35rem;
+    box-sizing: border-box;
+    width: 35rem;
+    max-width: 34%;
     max-height: 28.5rem;
     margin: 0 1rem;
     padding: 0 1rem;
