@@ -116,10 +116,20 @@ button:visited
 {
     outline: none;
 }
+.hidden
+{
+    opacity: 0;
+}
+.visible
+{
+    opacity: 1;
+}
 header
 {
     position: absolute;
     z-index: 1;
+
+    overflow: visible;
 
     width: 90%;
     max-height: 16rem;
@@ -133,6 +143,8 @@ header nav
 }
 header .logo
 {
+    position: absolute;
+
     max-width: 7.4rem;
     max-height: 5.8rem;
 }
@@ -902,6 +914,7 @@ header nav ul li a:hover
 .team
 {
     position: relative;
+    z-index: -1;
 
     overflow: visible;
 

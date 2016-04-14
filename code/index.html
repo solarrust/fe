@@ -4,11 +4,21 @@
     <title>Landing page for Fe</title>
       <link rel="stylesheet" type="text/css" href="../css/style.css">
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/animate.css">
       <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="../js/jquery.viewportchecker.min.js"></script>
     <meta charset="utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <script>
+      jQuery(document).ready(function() {
+          jQuery('.content_block').addClass("hidden").viewportChecker({
+          	classToAdd: 'visible animated fadeIn',
+          	offset: 300
+          });
+      })
+    </script>
   </head>
   <body>
     <header>

@@ -1,8 +1,8 @@
 head
 	title Landing page for Fe
-	+styles('../css/style.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+	+styles('../css/style.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', '../css/animate.css')
 
-	+script('https://code.jquery.com/ui/1.11.3/jquery-ui.min.js', 'https://code.jquery.com/jquery-1.10.2.js')
+	+script('https://code.jquery.com/ui/1.11.3/jquery-ui.min.js', 'https://code.jquery.com/jquery-1.10.2.js', '../js/jquery.viewportchecker.min.js')
 
 	meta(charset="utf8")
 
@@ -11,5 +11,12 @@ head
 	link(rel="icon" type="image/x-icon" href="../img/favicon.ico")
 
 
+	script.
+		jQuery(document).ready(function() {
+		    jQuery('.content_block').addClass("hidden").viewportChecker({
+		    	classToAdd: 'visible animated fadeIn',
+		    	offset: 300
+		    });
+		})
 
 
