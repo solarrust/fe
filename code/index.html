@@ -18,6 +18,24 @@
           	offset: 300
           });
       })
+      
+    </script>
+    <script>
+      $(document).ready(function(){
+      $("nav").on("click","a", function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
+      		event.preventDefault();
+      
+      //забираем идентификатор бока с атрибута href
+      		var id  = $(this).attr('href'),
+      
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      		top = $(id).offset().top;
+      
+      //анимируем переход на расстояние - top за 1500 мс
+      		$('body,html').animate({scrollTop: top}, 800);
+      	});
+      })
     </script>
   </head>
   <body>
@@ -27,10 +45,10 @@
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#service">Products</a></li>
+          <li><a href="#test">Testimonials</a></li>
+          <li><a href="#contacts">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -48,7 +66,7 @@
         <div class="mouse"><span></span></div>
         <div class="treangle"></div>
       </div>
-      <div class="content_block about">
+      <div id="about" class="content_block about">
         <div class="tit">
           <h1>About <i>Us</i></h1>
           <p>What We Do With Love</p>
@@ -272,7 +290,7 @@
         </section>
         <div class="treangle"></div>
       </div>
-      <div class="content_block service">
+      <div id="service" class="content_block service">
         <div class="tit">
           <h1>Our <i>Services</i></h1>
           <p>What We Do With Love</p>
@@ -431,7 +449,7 @@
         </div>
         <div class="treangle"></div>
       </div>
-      <div class="content_block testimonial">
+      <div id="test" class="content_block testimonial">
         <div class="tit">
           <h1>Our <i>testimonial</i></h1>
           <p>What We Do With Love</p>
@@ -537,7 +555,7 @@
         </div>
         <div class="treangle"></div>
       </div>
-      <div class="content_block touch">
+      <div id="contacts" class="content_block touch">
         <div class="tit">
           <h1>get in <i>touch</i></h1>
           <p>What We Do With Love</p>
