@@ -1,5 +1,5 @@
 head
-	title Landing page for Fe
+	title Long read for Fe
 	+styles('../css/style.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', '../css/animate.css')
 
 	+script('https://code.jquery.com/ui/1.11.3/jquery-ui.min.js', 'https://code.jquery.com/jquery-1.10.2.js', '../js/jquery.viewportchecker.min.js')
@@ -10,7 +10,7 @@ head
 
 	link(rel="icon" type="image/x-icon" href="../img/favicon.ico")
 
-
+	//- Скрипт для плавного появления контента
 	script.
 		jQuery(document).ready(function() {
 		    jQuery('.content_block').addClass("hidden").viewportChecker({
@@ -19,6 +19,7 @@ head
 		    });
 		})
 
+	//- Скрипт для плавной прокрутки до якоря
 	script.
 		$(document).ready(function(){
 		$("nav").on("click","a", function (event) {

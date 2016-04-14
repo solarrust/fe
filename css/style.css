@@ -143,10 +143,7 @@ header nav
 }
 header .logo
 {
-    position: absolute;
-
-    max-width: 7.4rem;
-    max-height: 5.8rem;
+    width: 7.4rem;
 }
 header .logo a
 {
@@ -914,7 +911,6 @@ header nav ul li a:hover
 .team
 {
     position: relative;
-    z-index: -1;
 
     overflow: visible;
 
@@ -938,10 +934,10 @@ header nav ul li a:hover
     background: url(../img/team.jpg) no-repeat center top;
     background-size: cover;
 
-    -webkit-shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-            shape-outside: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    -webkit-shape-outside: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
+            shape-outside: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
+    -webkit-clip-path: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
+            clip-path: polygon(0 14%, 100% 0, 100% 83%, 0 100%);
 }
 .team .shaped:after
 {
