@@ -2548,10 +2548,6 @@ footer .copy span
 }
 @media screen and (max-width: 736px)
 {
-    body
-    {
-        overflow: hidden;
-    }
     .for-mobile
     {
         position: fixed;
@@ -2564,7 +2560,7 @@ footer .copy span
         box-sizing: border-box;
         width: 100%;
         height: 100%;
-        padding: 2rem;
+        padding: 0 2rem;
 
         color: white;
         background: url(../img/main.jpg) no-repeat center;
@@ -2588,21 +2584,23 @@ footer .copy span
     }
     .for-mobile h1
     {
+        font-size: 20px;
         font-size: 20vmin;
 
         display: block;
 
-        max-width: 80%;
+        width: 80%;
 
         color: #0cf;
     }
     .for-mobile p
     {
+        font-size: 10px;
         font-size: 10vmin;
 
         display: block;
 
-        max-width: 80%;
+        width: 80%;
     }
     .for-mobile i
     {
